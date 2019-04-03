@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tranphuc.foodhome.ui.SquareCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:id="@+id/ivIconFood"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        <TextView
+                android:id="@+id/tvTitleCategory"
+                android:layout_below="@id/ivIconFood"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</com.tranphuc.foodhome.ui.SquareCardView>

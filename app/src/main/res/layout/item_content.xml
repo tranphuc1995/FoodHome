@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="6dp"
+        app:cardElevation="3dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:src="@drawable/image_test"
+                android:scaleType="fitXY"
+                android:id="@+id/ivDemoImage"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+
+        <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:id="@+id/civFoodIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            <TextView
+                    android:textSize="14sp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tvTitleContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
