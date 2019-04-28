@@ -23,6 +23,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+            android:overScrollMode="never"
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -37,19 +38,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                tools:context=".view.activity.MainActivity">
+                tools:context=".view.activities.NestedScrollViewActivity">
 
 
             <FrameLayout
-                    android:nestedScrollingEnabled="false"
+
                     android:layout_marginTop="15dp"
                     android:id="@+id/flSectionHeader"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></FrameLayout>
+                    android:layout_height="wrap_content"></FrameLayout
+                   >
 
 
             <FrameLayout
-                    android:nestedScrollingEnabled="false"
                     android:layout_marginTop="15dp"
                     android:id="@+id/flSectionUseVoucherGetRefund"
                     android:layout_width="match_parent"
@@ -57,14 +58,12 @@
 
 
             <FrameLayout
-                    android:nestedScrollingEnabled="false"
                     android:layout_marginTop="15dp"
                     android:id="@+id/flSectionCollection"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></FrameLayout>
 
             <FrameLayout
-                    android:nestedScrollingEnabled="false"
                     android:layout_marginTop="15dp"
                     android:id="@+id/flSectionContent"
                     android:layout_width="match_parent"

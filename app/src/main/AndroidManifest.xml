@@ -9,7 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".view.activity.MainActivity">
+        <activity android:name=".view.activities.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".view.activities.NestedScrollViewActivity">
+        </activity>
+        <activity android:name=".view.activities.IndexActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
